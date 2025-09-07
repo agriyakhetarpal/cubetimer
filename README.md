@@ -1,0 +1,2 @@
+# cubetimer
+A speedcuber timer
