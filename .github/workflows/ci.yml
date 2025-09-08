@@ -32,6 +32,9 @@ jobs:
         with:
           extra_args: --hook-stage manual --all-files
 
+      - name: Install package
+        run: uv sync
+
       - name: Run Pylint
         run: uvx pylint src --output-format=github
 
