@@ -58,6 +58,3 @@ def test_seed_output_determinism(seed: int, length: int) -> None:
     g1 = Scrambler.with_seed(seed)
     g2 = Scrambler.with_seed(seed)
     assert g1.generate(length) == g2.generate(length)
-
-
-

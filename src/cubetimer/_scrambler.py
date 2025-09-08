@@ -11,6 +11,7 @@ MODIFIERS = Literal["", "'", "2"]
 # 0 -> R/L, 1 -> U/D, 2 -> F/B
 _AXIS_OF: dict[MOVES, int] = {"R": 0, "L": 0, "U": 1, "D": 1, "F": 2, "B": 2}
 
+
 # TODO: ensure compliance with WCA; I've written what could be called
 # mostly a starting implementation for now with a basic constraint.
 @dataclass
