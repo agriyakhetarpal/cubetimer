@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import itertools
 import re
 
 import pytest
@@ -35,7 +34,7 @@ def test_no_consecutive_same_axis(seed: int) -> None:
     s = gen.generate(50)
     tokens = s.split()
     axes = [AXIS_OF[t[0]] for t in tokens]
-    assert all(a != b for a, b in itertools.pairwise(axes)), s
+    assert all(a != b for a, b in zip(axes, axes[1:])), s
 
 
 @pytest.mark.parametrize(
