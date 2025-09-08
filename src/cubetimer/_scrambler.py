@@ -3,10 +3,10 @@ from __future__ import annotations
 import random
 from typing import ClassVar
 
+MOVES = Literal["R", "L", "U", "D", "F", "B"]
+MODIFIERS = Literal["", "'", "2"]
 
 class Scrambler:
-    MOVES: ClassVar[list[str]] = ["R", "L", "U", "D", "F", "B"]
-    MODIFIERS: ClassVar[list[str]] = ["", "'", "2"]
 
     @classmethod
     def generate_scramble(cls, length: int = 20) -> str:
